@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springcloud?serverTimezone=GMT-8&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mapper:
+  mapper-location: classpath:mapper/*.xml
+  type-aliases-package: com.lugu.cloud.entity
+  configuration:
+    map-underscore-to-camel-case: true
